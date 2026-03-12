@@ -1,0 +1,65 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Copy files to dist
+        run: |
+          mkdir -p dist
+          rsync -av --exclude='.git' --exclude='.github' --exclude='dist' ./ ./dist/
+
+      - name: Convert OG image SVG to PNG
+        run: |
+          sudo apt-get install -y -qq librsvg2-bin
+          if [ -f dist/og-image.svg ]; then
+            rsvg-convert dist/og-image.svg -w 1200 -h 630 -o dist/og-image.png
+          fi
+
+      - name: Inject Sara AI agent API key
+        run: |
+          if [ -f dist/index.html ] && [ -n "$SARA_KEY" ]; then
+            sed -i "s|SARA_KEY_PLACEHOLDER|${SARA_KEY}|g" dist/index.html
+            echo "Sara API key injected"
+          else
+            echo "Skipping Sara key injection (key not set or index.html not found)"
+          fi
+        env:
+          SARA_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

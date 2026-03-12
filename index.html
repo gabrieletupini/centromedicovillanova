@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Centro Medico Villanova — Milano</title>
+  <meta name="description" content="Centro Medico Villanova: polispecialistico privato a Milano. Cardiologia, Ortopedia, Dermatologia, Neurologia, Pediatria, Ginecologia. Convenzioni con OpenFasi, FASI, UniSalute e altri." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gabrieletupini.github.io/centromedicovillanova/" />
+  <meta property="og:title" content="Centro Medico Villanova — Milano" />
+  <meta property="og:description" content="Visite specialistiche, diagnostica e prevenzione. 6 specialità, 8 convenzioni assicurative. Prenota con Sara 24/7." />
+  <meta property="og:image" content="https://gabrieletupini.github.io/centromedicovillanova/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#home" class="logo">
+        <div class="logo-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <rect width="28" height="28" rx="8" fill="#1A3C6E"/>
+            <path d="M14 6v16M6 14h16" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Villanova</span>
+          <span class="logo-sub">Centro Medico</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="#specialisti">Specialisti</a>
+        <a href="#come-funziona">Come funziona</a>
+        <a href="#convenzioni">Convenzioni</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+      <a href="#prenota" class="btn btn-primary btn-sm nav-cta">Prenota ora</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#specialisti">Specialisti</a>
+      <a href="#come-funziona">Come funziona</a>
+      <a href="#convenzioni">Convenzioni</a>
+      <a href="#contatti">Contatti</a>
+      <a href="#prenota" class="btn btn-primary">Prenota ora</a>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <div class="badge-dot"></div>
+          Sara è disponibile 24/7
+        </div>
+        <h1 class="hero-title">La tua salute,<br /><em>in buone mani</em></h1>
+        <p class="hero-subtitle">
+          Visite specialistiche, diagnostica e prevenzione in un unico centro a Milano.
+          Prenota in pochi secondi con Sara, la nostra assistente vocale disponibile sempre.
+        </p>
+        <div class="hero-actions">
+          <a href="#prenota" class="btn btn-primary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Prenota una visita
+          </a>
+          <a href="#specialisti" class="btn btn-outline btn-lg">Scopri i nostri specialisti</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <span class="trust-num">25+</span>
+            <span class="trust-label">anni di esperienza</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <span class="trust-num">6</span>
+            <span class="trust-label">specialità mediche</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <span class="trust-num">8</span>
+            <span class="trust-label">convenzioni attive</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <div class="hc-dot hc-dot-red"></div>
+            <div class="hc-dot hc-dot-yellow"></div>
+            <div class="hc-dot hc-dot-green"></div>
+            <span class="hc-title">Appuntamento confermato</span>
+          </div>
+          <div class="hero-card-body">
+            <div class="hc-avatar">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1A3C6E" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div class="hc-info">
+              <p class="hc-name">Dott. Marco Esposito</p>
+              <p class="hc-spec">Cardiologia</p>
+            </div>
+            <div class="hc-badge-confirmed">✓ Confermato</div>
+          </div>
+          <div class="hc-details">
+            <div class="hc-detail-row">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Martedì 17 Giugno 2026
+            </div>
+            <div class="hc-detail-row">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              ore 10:30
+            </div>
+            <div class="hc-detail-row">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Via della Repubblica 42, Milano
+            </div>
+          </div>
+          <div class="hc-email-sent">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email di conferma inviata
+          </div>
+        </div>
+        <div class="sara-bubble">
+          <div class="sara-orb"></div>
+          <p>"Ottimo! Ho trovato un appuntamento con il Dott. Esposito. Conferma?"</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F7F9FC"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ── SPECIALISTI ── -->
+  <section class="section" id="specialisti">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Il nostro team</span>
+        <h2 class="section-title">I nostri specialisti</h2>
+        <p class="section-subtitle">Medici esperti nei loro campi, dedicati alla tua cura.</p>
+      </div>
+      <div class="specialists-grid">
+
+        <div class="doctor-card" data-specialita="Cardiologia">
+          <div class="doctor-icon" style="--clr: #E53E3E; --bg: #FFF5F5;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--clr)" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <div class="doctor-info">
+            <h3 class="doctor-name">Dott. Marco Esposito</h3>
+            <span class="doctor-spec">Cardiologia</span>
+            <p class="doctor-desc">Ecocardiografia, ECG, holter cardiaco, prevenzione cardiovascolare e gestione dell'ipertensione.</p>
+          </div>
+          <a href="#prenota" class="doctor-cta">Prenota visita →</a>
+        </div>
+
+        <div class="doctor-card" data-specialita="Ortopedia">
+          <div class="doctor-icon" style="--clr: #3182CE; --bg: #EBF8FF;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--clr)" stroke-width="1.8"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="doctor-info">
+            <h3 class="doctor-name">Dott.ssa Giulia Ferretti</h3>
+            <span class="doctor-spec">Ortopedia e Traumatologia</span>
+            <p class="doctor-desc">Patologie muscolo-scheletriche, artroscopia, infiltrazioni, posturologia, mal di schiena e ginocchio.</p>
+          </div>
+          <a href="#prenota" class="doctor-cta">Prenota visita →</a>
+        </div>
+
+        <div class="doctor-card" data-specialita="Dermatologia">
+          <div class="doctor-icon" style="--clr: #D69E2E; --bg: #FFFFF0;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--clr)" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <div class="doctor-info">
+            <h3 class="doctor-name">Dott. Roberto Conti</h3>
+            <span class="doctor-spec">Dermatologia</span>
+            <p class="doctor-desc">Dermatite, acne, psoriasi, mappatura e rimozione nevi, chirurgia dermatologica, dermoscopia.</p>
+          </div>
+          <a href="#prenota" class="doctor-cta">Prenota visita →</a>
+        </div>
+
+        <div class="doctor-card" data-specialita="Neurologia">
+          <div class="doctor-icon" style="--clr: #805AD5; --bg: #FAF5FF;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--clr)" stroke-width="1.8"><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <div class="doctor-info">
+            <h3 class="doctor-name">Dott.ssa Sofia Marchetti</h3>
+            <span class="doctor-spec">Neurologia</span>
+            <p class="doctor-desc">Cefalee, emicrania, epilessia, disturbi del sonno, sclerosi multipla e neuropatie periferiche.</p>
+          </div>
+          <a href="#prenota" class="doctor-cta">Prenota visita →</a>
+        </div>
+
+        <div class="doctor-card" data-specialita="Pediatria">
+          <div class="doctor-icon" style="--clr: #38A169; --bg: #F0FFF4;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--clr)" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="doctor-info">
+            <h3 class="doctor-name">Dott. Lorenzo Ricci</h3>
+            <span class="doctor-spec">Pediatria</span>
+            <p class="doctor-desc">Visite pediatriche, bilanci di salute, vaccinazioni, pediatria preventiva e patologie infantili.</p>
+          </div>
+          <a href="#prenota" class="doctor-cta">Prenota visita →</a>
+        </div>
+
+        <div class="doctor-card" data-specialita="Ginecologia">
+          <div class="doctor-icon" style="--clr: #D53F8C; --bg: #FFF0F7;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--clr)" stroke-width="1.8"><circle cx="12" cy="8" r="6"/><path d="M12 14v8M9 19h6"/></svg>
+          </div>
+          <div class="doctor-info">
+            <h3 class="doctor-name">Dott.ssa Valentina Bruno</h3>
+            <span class="doctor-spec">Ginecologia e Ostetricia</span>
+            <p class="doctor-desc">Visita ginecologica, pap test, ecografia ostetrica, gravidanza, menopausa e contraccezione.</p>
+          </div>
+          <a href="#prenota" class="doctor-cta">Prenota visita →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── COME FUNZIONA ── -->
+  <section class="section section-alt" id="come-funziona">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Semplice e veloce</span>
+        <h2 class="section-title">Come prenotare con Sara</h2>
+        <p class="section-subtitle">La nostra assistente AI risponde 24/7 e prenota direttamente nel calendario dei medici.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1A3C6E" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+          </div>
+          <h3 class="step-title">Parla con Sara</h3>
+          <p class="step-desc">Clicca sul pulsante Sara in basso a destra e descrivi il tuo problema o la visita che desideri. Sara capisce e ti guida.</p>
+        </div>
+        <div class="step-arrow">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#CBD5E0" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1A3C6E" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3 class="step-title">Scegli l'orario</h3>
+          <p class="step-desc">Sara verifica gli slot disponibili in tempo reale e ti propone gli orari migliori per lo specialista di cui hai bisogno.</p>
+        </div>
+        <div class="step-arrow">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#CBD5E0" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1A3C6E" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3 class="step-title">Vieni da noi</h3>
+          <p class="step-desc">Ricevi la conferma via email con tutti i dettagli. Presentati in Via della Repubblica 42 all'orario prenotato.</p>
+        </div>
+      </div>
+      <div class="sara-cta-banner">
+        <div class="sara-cta-orb" id="sara-pulse"></div>
+        <div>
+          <p class="sara-cta-title">Sara è pronta ad aiutarti</p>
+          <p class="sara-cta-sub">Clicca sul pulsante in basso a destra per iniziare</p>
+        </div>
+        <a href="#prenota" class="btn btn-primary">Parla con Sara</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONVENZIONI ── -->
+  <section class="section" id="convenzioni">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Convenzioni assicurative</span>
+        <h2 class="section-title">Le nostre convenzioni</h2>
+        <p class="section-subtitle">Siamo convenzionati con i principali fondi sanitari integrativi e compagnie assicurative. Chiedi a Sara se la tua assicurazione è coperta.</p>
+      </div>
+
+      <div class="insurance-legend">
+        <div class="legend-item">
+          <span class="legend-badge legend-direct">Diretto</span>
+          <span>Nessun anticipo — fatturiamo direttamente al tuo fondo</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-badge legend-rimborso">Rimborso</span>
+          <span>Paghi la visita e richiedi rimborso alla tua assicurazione</span>
+        </div>
+      </div>
+
+      <div class="insurance-grid" id="insurance-grid">
+        <div class="insurance-card">
+          <div class="ins-sigla" style="background:#0057A8">OF</div>
+          <div class="ins-info">
+            <h4 class="ins-nome">OpenFasi</h4>
+            <p class="ins-tipo">Fondo sanitario integrativo</p>
+            <span class="legend-badge legend-direct">Diretto</span>
+          </div>
+        </div>
+        <div class="insurance-card">
+          <div class="ins-sigla" style="background:#003087">FASI</div>
+          <div class="ins-info">
+            <h4 class="ins-nome">FASI</h4>
+            <p class="ins-tipo">Fondo sanitario integrativo</p>
+            <span class="legend-badge legend-direct">Diretto</span>
+          </div>
+        </div>
+        <div class="insurance-card">
+          <div class="ins-sigla" style="background:#E30613">UNI</div>
+          <div class="ins-info">
+            <h4 class="ins-nome">UniSalute</h4>
+            <p class="ins-tipo">Compagnia assicurativa sanitaria</p>
+            <span class="legend-badge legend-direct">Diretto</span>
+          </div>
+        </div>
+        <div class="insurance-card">
+          <div class="ins-sigla" style="background:#009B77">PM</div>
+          <div class="ins-info">
+            <h4 class="ins-nome">Previmedical</h4>
+            <p class="ins-tipo">Società di gestione sanitaria</p>
+            <span class="legend-badge legend-direct">Diretto</span>
+          </div>
+        </div>
+        <div class="insurance-card">
+          <div class="ins-sigla" style="background:#C8102E">GW</div>
+          <div class="ins-info">
+            <h4 class="ins-nome">Generali Welion</h4>
+            <p class="ins-tipo">Compagnia assicurativa sanitaria</p>
+            <span class="legend-badge legend-rimborso">Rimborso</span>
+          </div>
+        </div>
+        <div class="insurance-card">
+          <div class="ins-sigla" style="background:#005BAC">BA</div>
+          <div class="ins-info">
+            <h4 class="ins-nome">Blue Assistance</h4>
+            <p class="ins-tipo">Società di assistenza sanitaria</p>
+            <span class="legend-badge legend-direct">Diretto</span>
+          </div>
+        </div>
+        <div class="insurance-card">
+          <div class="ins-sigla" style="background:#6A0DAD">MS</div>
+          <div class="ins-info">
+            <h4 class="ins-nome">Metasalute</h4>
+            <p class="ins-tipo">Fondo sanitario integrativo</p>
+            <span class="legend-badge legend-rimborso">Rimborso</span>
+          </div>
+        </div>
+        <div class="insurance-card">
+          <div class="ins-sigla" style="background:#FF6B35">WC</div>
+          <div class="ins-info">
+            <h4 class="ins-nome">Welfare Company</h4>
+            <p class="ins-tipo">Piattaforma welfare aziendale</p>
+            <span class="legend-badge legend-rimborso">Rimborso</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="insurance-note">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        La tua assicurazione non è in lista? Contattaci — potremmo avere ulteriori accordi non pubblicati o offrirti un preventivo privato conveniente.
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRENOTA / CTA ── -->
+  <section class="section section-cta" id="prenota">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-bg-blob"></div>
+        <div class="cta-content">
+          <h2 class="cta-title">Prenota la tua visita oggi</h2>
+          <p class="cta-sub">Parla con Sara: ti aiuta a trovare lo specialista giusto e a scegliere l'orario migliore in pochi minuti. Disponibile 24 ore su 24, 7 giorni su 7.</p>
+          <div class="cta-actions">
+            <button class="btn btn-white btn-lg" id="cta-sara-btn">
+              <div class="btn-orb"></div>
+              Parla con Sara ora
+            </button>
+            <a href="tel:+390248153627" class="btn btn-outline-white btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.33 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+              02 4815 3627
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTATTI & ORARI ── -->
+  <section class="section section-light" id="contatti">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-label">Dove siamo</span>
+          <h2 class="contact-title">Vieni a trovarci</h2>
+          <div class="contact-details">
+            <div class="contact-row">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A3C6E" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <p class="contact-label">Indirizzo</p>
+                <p class="contact-value">Via della Repubblica 42<br/>20121 Milano (MI)</p>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A3C6E" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.33 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+              </div>
+              <div>
+                <p class="contact-label">Telefono</p>
+                <p class="contact-value"><a href="tel:+390248153627">+39 02 4815 3627</a></p>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A3C6E" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <p class="contact-label">Email</p>
+                <p class="contact-value"><a href="mailto:info@centromedicovillanova.it">info@centromedicovillanova.it</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="orari-box">
+          <h3 class="orari-title">Orari di apertura</h3>
+          <div class="orari-list">
+            <div class="orario-row">
+              <span class="orario-giorno">Lunedì — Venerdì</span>
+              <span class="orario-ore">8:00 — 20:00</span>
+            </div>
+            <div class="orario-row">
+              <span class="orario-giorno">Sabato</span>
+              <span class="orario-ore">8:00 — 13:00</span>
+            </div>
+            <div class="orario-row orario-chiuso">
+              <span class="orario-giorno">Domenica</span>
+              <span class="orario-ore">Chiuso</span>
+            </div>
+          </div>
+          <div class="sara-available">
+            <div class="sara-dot-small"></div>
+            Sara è disponibile 24/7 per prenotazioni e informazioni
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <div class="logo-icon logo-icon-sm">
+          <svg width="22" height="22" viewBox="0 0 28 28" fill="none">
+            <rect width="28" height="28" rx="8" fill="#1A3C6E"/>
+            <path d="M14 6v16M6 14h16" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <span class="footer-name">Centro Medico Villanova</span>
+          <span class="footer-address">Via della Repubblica 42 — Milano</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#specialisti">Specialisti</a>
+        <a href="#convenzioni">Convenzioni</a>
+        <a href="#contatti">Contatti</a>
+        <a href="mailto:info@centromedicovillanova.it">Email</a>
+      </div>
+      <p class="footer-copy">© 2026 Centro Medico Villanova. Sito dimostrativo.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Sara AI Voice Agent — powered by TekTree -->
+  <script>
+    window.SARA_CONFIG = {
+      clientId: "medcenteritalia",
+      geminiApiKey: "SARA_KEY_PLACEHOLDER",
+      hostUrl: "https://gabrieletupini.github.io/website-creator"
+    };
+  </script>
+  <script src="https://gabrieletupini.github.io/website-creator/b2b/sara-widget.js"></script>
+
+</body>
+</html>
