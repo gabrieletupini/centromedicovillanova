@@ -1,0 +1,12 @@
+{
+  "affiliazioni": [
+    { "logo_sigla": "OF", "colore": "#0057A8", "nome": "OpenFasi", "tipo": "Fondo sanitario integrativo", "modalita": "diretto", "attiva": true },
+    { "logo_sigla": "FASI", "colore": "#003087", "nome": "FASI", "tipo": "Fondo sanitario integrativo", "modalita": "diretto", "attiva": true },
+    { "logo_sigla": "UNI", "colore": "#E30613", "nome": "UniSalute", "tipo": "Compagnia assicurativa sanitaria", "modalita": "diretto", "attiva": true },
+    { "logo_sigla": "PM", "colore": "#009B77", "nome": "Previmedical", "tipo": "Società di gestione sanitaria", "modalita": "diretto", "attiva": true },
+    { "logo_sigla": "GW", "colore": "#C8102E", "nome": "Generali Welion", "tipo": "Compagnia assicurativa sanitaria", "modalita": "rimborso", "attiva": true },
+    { "logo_sigla": "BA", "colore": "#005BAC", "nome": "Blue Assistance", "tipo": "Società di assistenza sanitaria", "modalita": "diretto", "attiva": true },
+    { "logo_sigla": "MS", "colore": "#6A0DAD", "nome": "Metasalute", "tipo": "Fondo sanitario integrativo", "modalita": "rimborso", "attiva": true },
+    { "logo_sigla": "WC", "colore": "#FF6B35", "nome": "Welfare Company", "tipo": "Piattaforma welfare aziendale", "modalita": "rimborso", "attiva": true }
+  ]
+}
